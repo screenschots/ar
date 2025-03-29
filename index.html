@@ -22,20 +22,31 @@
         width: 80%;
         height: 50%;
         margin: 20px;
-         background-color: violet;
+        background-color: violet;
+      }
+
+      .text-box {
+        width: 80%; /* Same width as model-viewer */
+        margin: 20px;
+        padding: 20px;
+        background-color: darkgray;
+        color: white;
+        text-align: center;
+        box-sizing: border-box; /* Ensures padding doesn't affect width */
+
       }
 
       h2 {
         margin: 10;
         padding: 10px;
-        color: white;
+        color: white
       }
     </style>
   </head>
   <body>
 <H2>Titos Cave AR</H2>
-  <model-viewer src="test.glb"
-                ios-src="test.usdz"
+  <model-viewer src="titos-cave.glb"
+                ios-src="titos-cave.usdz"
                 alt="Titos Cave"
                 ar
                 auto-rotate
@@ -43,6 +54,9 @@
                 ar-modes="webxr scene-viewer quick-look" 
                 environment-image="neutral">   
   </model-viewer>
-  This is a model of Titos cave on the island Vis Croatia.
-   </body>
+  <div class="text-box">
+  This is a model of Titos cave on the island Vis Croatia. This is a model of Titos cave on the island Vis Croatia.This is a model of Titos cave on the island Vis Croatia.This is a model of Titos cave on the island Vis Croatia.This is a model of Titos cave on the island Vis Croatia.This is a model of Titos cave on the island Vis Croatia.This is a model of Titos cave on the island Vis Croatia.This is a model of Titos cave on the island Vis Croatia.This is a model of Titos cave on the island Vis Croatia.This is a model of Titos cave on the island Vis Croatia.This is a model of Titos cave on the island Vis Croatia.This is a model of Titos cave on the island Vis Croatia.This is a model of Titos cave on the island Vis Croatia.This is a model of Titos cave on the island Vis Croatia.
+  </div>
+   
+</body>
 </html>
