@@ -3,19 +3,44 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group Photo</title>
+    <title>Titos Cave</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+      body {
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      model-viewer {
+        width: 80%;
+        height: 50%;
+        margin: 20px;
+      }
+
+      h2 {
+        margin: 10;
+        padding: 10px;
+        color: white;
+      }
+    </style>
   </head>
   <body>
-<H2>360 photo sphere</H2>
-  <model-viewer src="sphere.glb"
-                ios-src="sphere.usdz"
-                alt="33333333DDDDDDDDDDD"
+<H2>Titos Cave AR</H2>
+  <model-viewer src="titos-cave.glb"
+                ios-src="titos-cave.usdz"
+                alt="Titos Cave"
                 ar
                 auto-rotate
                 camera-controls
                 ar-modes="webxr scene-viewer quick-look" 
                 environment-image="neutral">   
   </model-viewer>
+  This is a model of Titos cave on the island Vis Croatia.
    </body>
 </html>
