@@ -5,18 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AR model</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <style>
-        
-      body {
-  background: linear-gradient(120deg, #1e3c72 0%, #d883fd 100%);
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-family: Arial, sans-serif;
-        height: 100vh;
-        margin: 0;
-      }
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <style> 
+      html {
+  min-height: 100%;
+  background: linear-gradient(135deg, #1e3c72 0%, #8e44ad 100%);
+}
+
+body {
+  min-height: 100%;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 1.2em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
 
       model-viewer {
         width: 80%;
@@ -24,15 +31,14 @@
         min-height: 300px; /* Sets a minimum height of 300px */
         max-width: 800px; /* Sets a maximum width of 800px */
         margin: 20px 0;
-        background-color: transparent
+        background-color: transparent;
         flex-shrink: 0; /* Prevents shrinking of the model-viewer */
       }
-
       .text-box {
         width: 80%; /* Same width as model-viewer */
         padding: 20px;
         margin: 20px 0;
-        background-color:
+        background-color: transparent;
         max-width: 800px; /* Sets a maximum width of 800px */
         color: black;
         text-align: left;
@@ -41,7 +47,10 @@
       }
 
       h2 {
-        margin: 10;
+      font-family: 'Pacifico', cursive;
+        font-size: 2.5em;
+       text-align: center;   
+       margin: 10;
         padding: 10px;
         color: black;
       }
