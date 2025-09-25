@@ -1,78 +1,86 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AR model</title>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
-    <style> 
-      html {
-  min-height: 100%;
-  background: linear-gradient(135deg, #1e3c72 0%, #8e44ad 100%);
-}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR model</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
-body {
-  min-height: 100%;
-  font-family: 'Roboto', Arial, sans-serif;
-  font-size: 1.2em;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-}
+  <style>
+    html {
+      min-height: 100%;
+      background: linear-gradient(135deg, #1e3c72 0%, #8e44ad 100%);
+    }
 
-      model-viewer {
-        width: 80%;
-        height: 50%; /* Ensures it takes 50% of the screen height */
-        min-height: 300px; /* Sets a minimum height of 300px */
-        max-width: 800px; /* Sets a maximum width of 800px */
-        margin: 20px 0;
-        background-color: transparent;
-        flex-shrink: 0; /* Prevents shrinking of the model-viewer */
-      }
-      .text-box {
-        width: 80%; /* Same width as model-viewer */
-        padding: 20px;
-        margin: 20px 0;
-        background-color: transparent;
-        max-width: 800px; /* Sets a maximum width of 800px */
-        color: black;
-        text-align: left;
-        box-sizing: border-box; /* Ensures padding doesn't affect width */
-        margin-bottom: 20px;
-      }
+    body {
+      min-height: 100%;
+      font-family: 'Roboto', Arial, sans-serif;
+      font-size: 1.2em;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    }
 
-      h2 {
+    model-viewer {
+      width: 80%;
+      height: 50%;
+      /* Ensures it takes 50% of the screen height */
+      min-height: 300px;
+      /* Sets a minimum height of 300px */
+      max-width: 800px;
+      /* Sets a maximum width of 800px */
+      margin: 20px 0;
+      background-color: transparent;
+      flex-shrink: 0;
+      /* Prevents shrinking of the model-viewer */
+    }
+
+    .text-box {
+      width: 80%;
+      /* Same width as model-viewer */
+      padding: 20px;
+      margin: 20px 0;
+      background-color: transparent;
+      max-width: 800px;
+      /* Sets a maximum width of 800px */
+      color: black;
+      text-align: left;
+      box-sizing: border-box;
+      /* Ensures padding doesn't affect width */
+      margin-bottom: 20px;
+    }
+
+    h2 {
       font-family: 'Pacifico', cursive;
-        font-size: 2.5em;
-       text-align: center;   
-       margin: 10;
-        padding: 10px;
-        color: black;
-      }
-    </style>
-  </head>
-  <body>
-<H2>The BRAT cave</H2>
-  <model-viewer src="test6.glb"
-                ios-src="test6.usdz"
-                alt="BRAT Cave"
-                ar
-                auto-rotate
-                camera-controls
-                autoplay
-                animation-loop
-                animation-name="CubeAction"
-                ar-modes="webxr scene-viewer quick-look" 
-                environment-image="neutral">   
+      font-size: 2.5em;
+      text-align: center;
+      margin: 10;
+      padding: 10px;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <H2>The BRAT cave</H2>
+  <model-viewer src="test7.glb" ios-src="test7.usdz" alt="BRAT Cave" ar auto-rotate camera-controls autoplay
+    animation-loop animation-name="CubeAction" ar-modes="webxr scene-viewer quick-look" environment-image="neutral">
   </model-viewer>
   <div class="text-box">
-    Legend has it that the BRAT Cave was founded by Madam Roxie, a former fashion mogul and underground icon who vanished from the public eye after a dramatic fallout with the elites of high society. Tired of playing by the rules, she disappeared—only to return stronger, building a hidden empire of fashion, wealth, and rebellion beneath the city. Inside the BRAT Cave: Entering the BRAT Cave is like stepping into a pink-tinted dream world. Chandeliers made of diamond-studded lip gloss tubes hang from the ceiling. Neon signs glow with phrases like “Stay Cute, Stay Dangerous” and “Lip Gloss Before War.” The air smells like vanilla, cash, and a hint of rebellion.  
+    Legend has it that the BRAT Cave was founded by Madam Roxie, a former fashion mogul and underground icon who
+    vanished from the public eye after a dramatic fallout with the elites of high society. Tired of playing by the
+    rules, she disappeared—only to return stronger, building a hidden empire of fashion, wealth, and rebellion beneath
+    the city. Inside the BRAT Cave: Entering the BRAT Cave is like stepping into a pink-tinted dream world. Chandeliers
+    made of diamond-studded lip gloss tubes hang from the ceiling. Neon signs glow with phrases like “Stay Cute, Stay
+    Dangerous” and “Lip Gloss Before War.” The air smells like vanilla, cash, and a hint of rebellion.
   </div>
-   
+
 </body>
+
 </html>
